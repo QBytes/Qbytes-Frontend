@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 
-class App extends Component {
-
+class Home extends Component {
   render(){
-    const {children} = this.props
     return (
       <div>
-        {children}
+        <h1>Home</h1>
+        <Link to="/signUp">post</Link>
       </div>
     );
   }
 }
 
-export default App;
+export default Home
