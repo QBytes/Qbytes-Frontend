@@ -12,7 +12,7 @@ class HeaderContainer extends Component {
 
   render(){
     return (
-      <nav className="blue-grey lighten-5">
+      <nav className="white">
         <div className="nav-wrapper">
           <Link to="/" className="brand-logo red-text accent-3 text-darken-3" style={{...style}}>Q-Bytes</Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
