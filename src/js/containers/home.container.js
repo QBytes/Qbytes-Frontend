@@ -12,8 +12,9 @@ class Home extends Component {
     return (
       <div>
         <h1>Home</h1>
-        <Link to="/signUp">post</Link>
+        <Link to="/post">post</Link>
          {/*<PostModal {...modal}/>*/}
+
       </div>
     );
   }

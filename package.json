@@ -39,6 +39,7 @@
     "redux": "^3.3.1",
     "redux-auth": "0.0.2",
     "redux-logger": "^2.6.1",
-    "redux-thunk": "^2.0.1"
+    "redux-thunk": "^2.0.1",
+    "semantic-ui": "^2.1.8"
   }
 }

@@ -9,6 +9,7 @@ import App from './containers/app.container'
 import Home from './containers/home.container'
 import SignUp from './containers/signUp.container'
 import SignIn from './containers/signIn.container'
+import Post from './containers/post.container'
 import { configure } from 'redux-auth'
 
 
@@ -27,6 +28,7 @@ store.dispatch(configure(
             <Route path="home" component={Home}/>
             <Route path="signUp" component={SignUp}/>
             <Route path="signIn" component={SignIn}/>
+            <Route path="post" component={Post}/>
           </Route>
         </Router>
       </div>
