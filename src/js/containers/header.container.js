@@ -16,30 +16,26 @@ const logoDiv = {
 
 class HeaderContainer extends Component {
 
-  clickLoginButton(){
-        this.openModal('login');
-    }
-
-    clickSignUpButton(){
-        this.openModal('signUp');
-    }
-
+  
   render(){
     return (
       <div className="ui top fixed  menu">
             
             <div className="item">
               {/*<div className="ui fluid image" style={{...logoDiv}}>*/}
-                 <img  className="ui mini image"  src={require("../../images/logo.png")} />
+                 <Link to="/"><img  className="ui mini image"  src={require("../../images/logo.png")} /></Link>
             {/*</div>*/}
               
             </div>
             <div className="right menu">
+              <div className="item">
+                 <Link to="/post"><div className="ui button">Post</div></Link>
+               </div>
              <div className="item">
-                 <div className="ui button" onClick={this.clickLoginButton.bind(this)}>Log-in</div>
+                 <Link to="/signIn"><div className="ui button" >Log-in</div></Link>
                </div>
                <div className="item">
-                 <div className="ui primary button" onClick={this.clickSignUpButton.bind(this)}>Sign up</div>
+                 <Link to="/signUp"><div className="ui primary button" >Sign up</div></Link>
                </div>
            </div>
              {/*<nav className="white">
