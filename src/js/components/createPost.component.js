@@ -5,9 +5,13 @@ import { SignOutButton } from "redux-auth";
 import Dropzone from 'react-dropzone'
 
 const containerStyle = {
- paddingTop: 75
+ paddingTop: 100
 };
 
+const gridStyle = {
+ paddingLeft: 0,
+ paddingRight: 0
+};
 
 class CreatePost extends Component {
 
@@ -18,7 +22,10 @@ class CreatePost extends Component {
   render(){
     return (   
       <div className="ui text container" style={{...containerStyle}}>
-      <div className="ui one column grid">
+      <div className="ui one column stackable center aligned page grid" style={{...gridStyle}}>
+        <div className="column"> 
+              <h1 className="">Modify and Share </h1>     
+        </div>
         <div className="row"> 
             <div className="ten wide column">
               <form className="ui form">
@@ -38,11 +45,14 @@ class CreatePost extends Component {
             </Dropzone>
             </div>
         </div>
-        <div className="row">
-            <div className="field">
-              <label>Title</label>
-              <input type="text" name="" placeholder="Title" />
-            </div>
+        <div className="column">
+            <div className="ui fluid action input">
+            <input type="text" placeholder="Search..." />
+            <div className="ui button">Tags</div>
+          </div>
+        </div>
+        <div className="column">
+            <div className="ui button">Submit</div>
         </div> 
       </div>
       </div>
