@@ -10,6 +10,7 @@ import Home from './containers/home.container'
 import SignUp from './containers/signUp.container'
 import SignIn from './containers/signIn.container'
 import Post from './containers/post.container'
+import CreatePost from './components/createPost.component'
 import { configure } from 'redux-auth'
 
 
@@ -29,6 +30,7 @@ store.dispatch(configure(
             <Route path="signUp" component={SignUp}/>
             <Route path="signIn" component={SignIn}/>
             <Route path="post" component={Post}/>
+            <Route path="post/partTwo" component={CreatePost}/>
           </Route>
         </Router>
       </div>
