@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 import PostModal from '../components/PostModal.component'
+import Card from '../containers/card.container'
 
-const modal = {
-  isOpen: true
+const containerStyle = {
+ paddingTop: 100,
+ paddingLeft: 100
 };
 
 
 class Home extends Component {
   render(){
     return (
-      <div>
+      <div style={{...containerStyle}}>
         <h1>Home</h1>
-        <Link to="/post">post</Link>
+        
+        <Card />
          {/*<PostModal {...modal}/>*/}
 
       </div>

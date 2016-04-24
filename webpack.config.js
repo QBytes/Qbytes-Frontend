@@ -20,7 +20,7 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loaders: ['react-hot', 'babel'], include: path.join(__dirname, 'src') },
       { test: /\.css$/, loader: "style-loader!css-loader" },
-      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },  
+      { test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/, loader: 'url-loader?limit=100000' },  
       { test: /\.json$/, loader: "json-loader" }
     ]
   }
