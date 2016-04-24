@@ -13,6 +13,9 @@ const logoDiv = {
   maxHeight: 50
 };
 
+const searchStyle = {
+  width: "50%"
+};
 
 class HeaderContainer extends Component {
 
@@ -27,6 +30,12 @@ class HeaderContainer extends Component {
             {/*</div>*/}
               
             </div>
+            <div className="item" style={{...searchStyle}}>
+            <div className="ui icon input" >
+              <input type="text" placeholder="Search..." />
+              <i className="search link icon"></i>
+            </div>
+          </div>
             <div className="right menu">
               <div className="item">
                  <Link to="/post"><div className="ui button">Post</div></Link>
