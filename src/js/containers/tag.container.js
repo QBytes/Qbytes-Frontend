@@ -6,7 +6,8 @@ import SharePost from "../components/SharePost.component"
 import Card from '../containers/card.container'
 
 const containerStyle = {
- paddingTop: 85
+ paddingTop: 85,
+ background: "#F4F7F9"
 };
 
 const categoryStyle = {
@@ -17,6 +18,10 @@ const headerDivStyle = {
 	width: '75%',
 	marginLeft: '10%',
 	marginRight: '10%'
+}
+
+const buttonStackStyle = {
+	paddingLeft: '20%',
 }
 
 class TagPage extends Component {
@@ -76,9 +81,20 @@ class TagPage extends Component {
 	    </div>
 	  </div>
 	</div>
-	<div style={{...categoryStyle}}>
-       
-         <Card />
+	<div className="ui grid">
+
+       	 <div className="two wide column ">
+    	 	 <div className="ui vertical buttons" style={{...buttonStackStyle}}>
+			  <button className="ui button">Featured</button>
+			  <button className="ui button">Top Voted</button>
+			  <button className="ui button">New Posts</button>
+			  <button className="ui button">Popular</button>
+			</div>
+
+    	 </div>
+		<div className="ten wide column">
+    	 	<Card />	 
+    	 </div>
          {/*<PostModal {...modal}/>*/}
 
      </div>
