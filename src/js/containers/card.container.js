@@ -26,6 +26,12 @@ class Card extends Component {
     <div className="ui card">
 	  <div className="image">
 	    <img src={require("../../images/javascript.jpg")} />
+	     <a className="ui red left corner label">
+	        <i className="heart icon"></i>
+	      </a>
+	      <a className="ui blue right corner label">
+	        <i className="external icon"></i>
+	      </a>
 	  </div>
 	  <div className="content">
 	    <a className="header">Create a to-do list app using React, Redux and Rails</a>

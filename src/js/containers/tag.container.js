@@ -106,6 +106,30 @@ class TagPage extends Component {
 			<div className="four wide column">
 				<Card />
 			</div>
+			<div className="four wide column">
+				<Card />
+			</div>
+    	 	<div className="four wide column">
+				<Card />
+			</div>
+			<div className="four wide column">
+				<Card />
+			</div>
+			<div className="four wide column">
+				<Card />
+			</div>
+			<div className="four wide column">
+				<Card />
+			</div>
+    	 	<div className="four wide column">
+				<Card />
+			</div>
+			<div className="four wide column">
+				<Card />
+			</div>
+			<div className="four wide column">
+				<Card />
+			</div>
 			</div>
     	 </div>
     	 <div className="two wide column ">
