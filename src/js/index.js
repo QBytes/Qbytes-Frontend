@@ -11,6 +11,7 @@ import SignUp from './containers/signUp.container'
 import SignIn from './containers/signIn.container'
 import Post from './containers/post.container'
 import CreatePost from './components/createPost.component'
+import TagPage from './containers/tag.container'
 import { configure } from 'redux-auth'
 
 
@@ -31,6 +32,7 @@ store.dispatch(configure(
             <Route path="signIn" component={SignIn}/>
             <Route path="post" component={Post}/>
             <Route path="post/partTwo" component={CreatePost}/>
+            <Route path="tagPage" component={TagPage}/>
           </Route>
         </Router>
       </div>

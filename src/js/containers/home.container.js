@@ -15,7 +15,7 @@ class Home extends Component {
       <div style={{...containerStyle}}>
         <h1>Home</h1>
         
-        <Card />
+         <Card />
          {/*<PostModal {...modal}/>*/}
 
       </div>
