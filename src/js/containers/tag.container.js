@@ -92,8 +92,28 @@ class TagPage extends Component {
 			</div>
 
     	 </div>
-		<div className="ten wide column">
-    	 	<Card />	 
+		<div className="twelve wide column">
+			<div className="ui grid">
+			<div className="four wide column">
+				<Card />
+			</div>
+    	 	<div className="four wide column">
+				<Card />
+			</div>
+			<div className="four wide column">
+				<Card />
+			</div>
+			<div className="four wide column">
+				<Card />
+			</div>
+			</div>
+    	 </div>
+    	 <div className="two wide column ">
+    	 	 <div className="ui vertical buttons" style={{...buttonStackStyle}}>
+			  <button className="ui button">Card Mode</button>
+			  <button className="ui button">List Mode</button>
+			</div>
+
     	 </div>
          {/*<PostModal {...modal}/>*/}
 
