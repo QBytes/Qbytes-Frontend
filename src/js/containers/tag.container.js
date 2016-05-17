@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import { SignOutButton } from "redux-auth";
 import SharePost from "../components/SharePost.component"
 import Card from '../containers/card.container'
+import List from '../containers/list.container'
 
 const containerStyle = {
  paddingTop: 85,
@@ -27,7 +28,7 @@ const buttonStackStyle = {
 class TagPage extends Component {
 
   render(){
-    return ( 
+    return (
     <div style={{...containerStyle}}>
     <div className="ui raised very padded container  stacked segment" style={{...headerDivStyle}}>
     	 <div className="ui grid">
@@ -39,7 +40,7 @@ class TagPage extends Component {
 				  React.js
 				</a></h1>
 
-    	 	 	 <h3 className="sub header"> <span style={{fontWeight:'normal'}}>React is a JavaScript library for creating user interfaces by Facebook and Instagram. 
+    	 	 	 <h3 className="sub header"> <span style={{fontWeight:'normal'}}>React is a JavaScript library for creating user interfaces by Facebook and Instagram.
     	 	 	 	Many people choose to think of React as the V in MVC.
 					We built React to solve one problem: building large applications with data that changes over time. </span></h3>
     	 	 </div>
@@ -70,8 +71,8 @@ class TagPage extends Component {
 	  <a className="item">
 	    Discussion
 	  </a>
-	
-	  
+
+
 	  <div className="right menu">
 	    <div className="item">
 	      <div className="ui transparent icon input">
@@ -94,7 +95,8 @@ class TagPage extends Component {
     	 </div>
 		<div className="twelve wide column">
 			<div className="ui grid">
-			<div className="four wide column">
+      <List />
+			{/*<div className="four wide column">
 				<Card />
 			</div>
     	 	<div className="four wide column">
@@ -129,7 +131,7 @@ class TagPage extends Component {
 			</div>
 			<div className="four wide column">
 				<Card />
-			</div>
+			</div>*/}
 			</div>
     	 </div>
     	 <div className="two wide column ">
@@ -143,7 +145,7 @@ class TagPage extends Component {
 
      </div>
 
-	
+
 	</div>
     );
   }
